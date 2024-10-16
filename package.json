@@ -1,0 +1,22 @@
+{
+  "name": "primera_api_express",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+
+    "start": "tsc && nodemon build/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Herena Ojeda",
+  "license": "ISC",
+  "description": "creación de mi primera API Rest con ExpressJS y Typescript. Será un CRUD sobre una BD PosgreSQL",
+  "dependencies": {
+    "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.7.5",
+    "nodemon": "^3.1.7",
+    "typescript": "^5.6.3"
+  }
+}
