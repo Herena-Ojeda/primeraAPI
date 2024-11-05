@@ -9,7 +9,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 document.addEventListener("DOMContentLoaded", () => __awaiter(void 0, void 0, void 0, function* () {
-    const result = yield fetch("http://localhost:3000/api/v1/users");
+    const result = yield axios.get("http://localhost:3000/api/v1/users");
     const resultJson = yield result.json();
     let htmlUsers = "<ul>";
     resultJson.forEach((user) => { htmlUsers += `<li>${user.name} ${user.first_surname}<li>`; });
